@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LA 26 CLIENT · Launcher</title>
+<meta name="description" content="Descargá el launcher de La 26: entrás al server con un clic, los mods se actualizan solos y el launcher se mantiene al día.">
+<meta name="theme-color" content="#04100e">
+<meta property="og:title" content="LA 26 CLIENT">
+<meta property="og:description" content="El launcher y el server de la comunidad. Descargalo, abrilo y estás adentro.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="saltar" href="#launcher">Saltar al contenido</a>
+
+<header class="top" id="inicio">
+  <a class="marca" href="#inicio" aria-label="La 26, inicio">
+    <img src="assets/logo-s.png" alt="" width="46" height="46">
+    <span>La 26</span>
+  </a>
+  <div class="top-der">
+    <a class="dl-esquina" data-dl href="https://github.com/LA26PA/launcher/releases/latest/download/La26-Launcher.exe">Descargar</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="subnav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span>Menú</span>
+    </button>
+  </div>
+</header>
+
+<nav class="sub" id="subnav" aria-label="Secciones">
+  <a href="#launcher">El launcher</a>
+  <a href="#herramientas">Herramientas</a>
+  <a href="#empezar">Cómo empezar</a>
+  <a href="#creators">Creators</a>
+  <a href="#patrocinadores">Patrocinadores</a>
+</nav>
+
+<main>
+  <section class="hero">
+    <canvas id="cielo" aria-hidden="true"></canvas>
+    <div class="hero-centro">
+      <img class="hero-logo" src="assets/logo.png" alt="Logo de La 26: una corona sobre el número 26 rodeado por una órbita" width="420" height="420" fetchpriority="high">
+      <h1>LA 26 CLIENT</h1>
+      <p class="hero-sub">El launcher y el server de la comunidad. Descargalo, abrilo y estás adentro.</p>
+      <div class="hero-botones">
+        <a class="btn-dl" data-dl href="https://github.com/LA26PA/launcher/releases/latest/download/La26-Launcher.exe">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg>
+          <span class="btn-dl-txt"><b>Descargar</b><small>Para Windows · gratis</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="banda" aria-hidden="true">
+    <div class="banda-pista">
+      <span>LA 26 CLIENT</span><img src="assets/logo-s.png" alt="">
+      <span>Un server</span><img src="assets/logo-s.png" alt="">
+      <span>Un launcher</span><img src="assets/logo-s.png" alt="">
+      <span>Una comunidad</span><img src="assets/logo-s.png" alt="">
+      <span>LA 26 CLIENT</span><img src="assets/logo-s.png" alt="">
+      <span>Un server</span><img src="assets/logo-s.png" alt="">
+      <span>Un launcher</span><img src="assets/logo-s.png" alt="">
+      <span>Una comunidad</span><img src="assets/logo-s.png" alt="">
+    </div>
+  </div>
+
+  <section class="bloque" id="launcher">
+    <figure class="ventana">
+      <img src="assets/launcher-inicio.webp" alt="Pantalla principal del launcher de La 26, con el botón Iniciar" width="1920" height="1200" loading="lazy">
+    </figure>
+    <div class="texto">
+      <h2>Entrá al server con un clic</h2>
+      <p class="intro">El launcher prepara todo y te deja adentro, sin pasar por el menú de Minecraft.</p>
+      <dl class="puntos">
+        <div><dt>Mods al día</dt><dd>Los mods del server y los de rendimiento se bajan y se actualizan solos antes de cada partida.</dd></div>
+        <div><dt>Premium o con nick</dt><dd>Entrá con tu cuenta de Microsoft o con un nick. Con cuenta de Microsoft, cambiás la skin desde el launcher.</dd></div>
+        <div><dt>Se actualiza solo</dt><dd>Cuando sale una versión nueva, el launcher la descarga y se reinicia. No tenés que volver a esta página.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bloque invertido" id="herramientas">
+    <figure class="ventana">
+      <img src="assets/launcher-herramientas.webp" alt="Pestaña Herramientas del launcher: carpetas, backup de mundos, reparar y reporte de errores" width="1920" height="1200" loading="lazy">
+    </figure>
+    <div class="texto">
+      <h2>Y si algo falla, lo arreglás vos</h2>
+      <p class="intro">La pestaña Herramientas junta lo que antes se resolvía pidiendo ayuda en el chat.</p>
+      <dl class="puntos">
+        <div><dt>Reparar</dt><dd>Vuelve a bajar mods, librerías y Java sin tocar tus mundos ni tus opciones.</dd></div>
+        <div><dt>Backup de mundos</dt><dd>Guarda una copia comprimida de tus mundos con un botón. Se conservan las últimas cinco.</dd></div>
+        <div><dt>Reporte de errores</dt><dd>Copiás el log junto con tu versión y tu sistema, y se lo pasás al staff.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="pasos" id="empezar">
+    <img class="marca-agua" src="assets/logo.png" alt="" width="700" height="700" loading="lazy">
+    <div class="pasos-in">
+      <h2>Empezá en tres pasos</h2>
+      <ol>
+        <li>
+          <h3>Descargá el launcher</h3>
+          <p>Es un solo archivo, <code>La26-Launcher.exe</code>. No se instala nada más.</p>
+          <a class="btn-claro" data-dl href="https://github.com/LA26PA/launcher/releases/latest/download/La26-Launcher.exe">Descargar</a>
+        </li>
+        <li>
+          <h3>Abrilo</h3>
+          <p>Si Windows muestra “Windows protegió su PC”, tocá <b>Más información</b> y después <b>Ejecutar de todas formas</b>. Pasa con los programas nuevos que todavía no tienen firma.</p>
+        </li>
+        <li>
+          <h3>Elegí tu cuenta y tocá Iniciar</h3>
+          <p>Con tu cuenta de Microsoft o con un nick. La primera vez tarda un poco porque baja el juego y los mods.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="creators" id="creators">
+    <h2>Creators</h2>
+    <div class="creators-grid">
+      <article class="creator">
+        <h3>Mechafiedd</h3>
+        <div class="creator-redes">
+          <a class="red red-twitch" href="https://www.twitch.tv/mechafiedd" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.43l-3 3v-3H6.857V1.714h13.714Z"/></svg><span>Twitch</span></a>
+          <a class="red red-x" href="https://x.com/mechafiedd" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span>X</span></a>
+        </div>
+      </article>
+      <article class="creator">
+        <h3>Matecocido</h3>
+        <div class="creator-redes">
+          <a class="red red-twitch" href="https://www.twitch.tv/mxteefn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.43l-3 3v-3H6.857V1.714h13.714Z"/></svg><span>Twitch</span></a>
+          <a class="red red-x" href="https://x.com/Mxteefn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span>X</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="patro" id="patrocinadores">
+    <h2>Patrocinadores</h2>
+    <div class="patro-grid">
+      <a class="slot slot-principal" href="https://stake.com" target="_blank" rel="sponsored noopener noreferrer" aria-label="Stake, patrocinador oficial (se abre en otra pestaña)">
+        <span class="etiqueta">Patrocinador oficial</span>
+        <span class="slot-nombre">Stake</span>
+        <span class="aviso">Solo para mayores de 18 años. Jugá con responsabilidad.</span>
+      </a>
+      <div class="slot slot-libre">
+        <img src="assets/logo-s.png" alt="" width="72" height="72" loading="lazy">
+        <span class="slot-nombre chico">Tu marca acá</span>
+        <span class="aviso">Hablá con el staff en el server.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <img class="pie-logo" src="assets/logo.png" alt="" width="520" height="520" loading="lazy">
+  <div class="pie-in">
+    <div class="pie-marca"><img src="assets/logo-s.png" alt="" width="54" height="54"><span>La 26</span></div>
+    <p class="legal">La 26 es un proyecto de la comunidad. No está afiliado con Mojang, Microsoft ni Minecraft.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
